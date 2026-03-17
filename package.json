@@ -1,0 +1,33 @@
+{
+  "name": "agentgif",
+  "version": "0.2.0",
+  "description": "CLI for AgentGIF — upload, manage, and share terminal GIFs",
+  "bin": { "agentgif": "./dist/index.js" },
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "node --test tests/*.test.js"
+  },
+  "keywords": ["gif", "terminal", "cli", "agentgif", "asciinema", "cast", "badge"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dobestan/agentgif-node"
+  },
+  "homepage": "https://agentgif.com",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "commander": "^12.0.0",
+    "open": "^10.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "@types/node": "^22.0.0"
+  }
+}
